@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex API</title>
+    <link rel="stylesheet" href="api2.css">
+    <script src="api2.js"></script>
+</head>
+<body>
+    <form id="container">
+        <div>
+            <label for="tituo"> Título </label>
+            <input type="text" id="titulo" placeholder="digite um título">
+        </div>
+        <div>
+            <label for="lancamento"> Lançamento </label>
+            <input type="readonly" id="lancamento">
+        </div>
+        <div>
+            <label for="duracao"> Duração </label>
+            <input type="readonly" id="duracao">
+        </div>
+        <div>
+            <label for="genero"> Gênero </label>
+            <input type="readonly" id="genero">
+        </div>
+        <div>
+            <label for="sinopse"> Sinopse </label>
+            <input type="readonly" id="sinopse">
+        </div>
+        <div>
+            <label for="atores"> Atores </label>
+            <input type="readonly" id="atores">
+        </div>
+        <div>
+            <button type="button" onclick="buscaTitulo()">Buscar</button>
+        </div>
+    </form>
+</body>
+</html>
