@@ -6,9 +6,15 @@ async function buscaTitulo(){
 
     let dados = await resposta.json()
 
-    document.getElementById('lancamento').value = dados.Released
-    document.getElementById('duracao').value = dados.Runtime
-    document.getElementById('genero').value = dados.Genre
-    document.getElementById('sinopse').value = dados.Plot
-    document.getElementById('atores').value = dados.Actors
+    if(dados.Response ==='False'){
+        alert('Movie could not be found.')
+    }
+
+    else{
+        document.getElementById('lancamento').value = dados.Released
+        document.getElementById('duracao').value = dados.Runtime
+        document.getElementById('genero').value = dados.Genre
+        document.getElementById('sinopse').value = dados.Plot
+        document.getElementById('atores').value = dados.Actors
+    }
 }
