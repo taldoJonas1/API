@@ -8,7 +8,6 @@ body {
     background-color: rgb(8, 8, 27);
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -16,11 +15,17 @@ body {
 #container {
     border: 2px solid rgb(41, 41, 120);
     width: 400px;
-    margin: 20px auto;
+    margin: 100px auto;
     padding: 20px;
     border-radius: 15px;
     background-color: rgb(20, 20, 63);
     text-align: center;
+}
+
+#titulo{
+    margin: auto;
+    text-align: center;
+    width: 200px;
 }
 
 label {
@@ -35,8 +40,8 @@ input{
 }
 
 img{
-    height: 270px;
-    width: 270px;
+    height: auto;
+    width: auto;
     display: block;
     margin: auto;
     border: 2px solid white;
