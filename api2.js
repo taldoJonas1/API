@@ -16,5 +16,6 @@ async function buscaTitulo(){
         document.getElementById('genero').value = dados.Genre
         document.getElementById('sinopse').value = dados.Plot
         document.getElementById('atores').value = dados.Actors
+        document.getElementById('poster').src = dados.Poster 
     }
 }
